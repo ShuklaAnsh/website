@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  background-color: var(--bg);
+  /* background-color: theme(colors.transparent); */
+}
