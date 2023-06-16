@@ -1,4 +1,5 @@
 import { Section } from "./components";
+import profilePic from "./assets/profile.jpg";
 
 export function App() {
   return (
@@ -8,11 +9,14 @@ export function App() {
           Ansh Shukla
         </nav>
       </header>
+      <section class="container px-4 pt-4">
+        <img class="w-32 md:w-64" src={profilePic}/>
+      </section>
       <main class="mb-auto">
         {Array(20)
           .fill(0)
           .map((_) => (
-            <Section>{Math.round(Math.random() * 100)}</Section>
+            <Section header="Header">{Math.round(Math.random() * 100)}</Section>
           ))}
         <Section>Main</Section>
       </main>
