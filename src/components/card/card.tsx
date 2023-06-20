@@ -1,17 +1,26 @@
-import { JSX, PropsWithChildren } from "preact/compat";
+import React from "preact/compat";
+import { CardFooter, ICardFooterProps } from "./card-footer";
+import { CardHeader, ICardHeaderProps } from "./card-header";
+import { CardContent, ICardContentProps } from "./card-content";
 
 interface ICardProps {
   class?: string;
-  header?: JSX.Element | JSX.Element[] | string;
 }
 
-export const Card = (props: PropsWithChildren<ICardProps>) => {
+interface CardSubComponents {
+  Header: React.FC<ICardHeaderProps>;
+  Content: React.FC<ICardContentProps>;
+  Footer: React.FC<ICardFooterProps>;
+}
+
+export const Card: React.FC<ICardProps> & CardSubComponents = (props) => {
   return (
-    <article
-      class={`rounded-xl bg-slate-400 p-4 dark:bg-slate-800 ${props.class}`}
-    >
-      <header class="text-lg font-semibold">{props.header}</header>
+    <article class={`rounded-xl bg-slate-400 dark:bg-slate-800 ${props.class}`}>
       {props.children}
     </article>
   );
 };
+
+Card.Header = CardHeader;
+Card.Content = CardContent;
+Card.Footer = CardFooter;

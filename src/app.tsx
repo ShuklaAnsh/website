@@ -10,45 +10,56 @@ export function App() {
         <aside>Hello, I need coffee.</aside>
       </article>
       <main class="mb-auto">
-        <Section header="Skills" class="bg-green-600 dark:bg-indigo-500">
-          <Badge.TsBadge />
-          <Badge.React />
-          <Badge.Dotnet />
-          <Badge.Nodejs />
-        </Section>
         <Section header="Experience" class="bg-green-300 dark:bg-indigo-900">
           <ul class="space-y-4">
             <li>
-              <Card header="Schneider Electric">
-                <h1>Full Stack Developer</h1>
-                <h3>May 2021 - Present</h3>
-                <small>4 months Co-op</small>
-                <h4>React, Dotnet, GraphQL, PostgreSQL, TypeScript, C#</h4>
-                <p>Worked on a cloud based app</p>
+              <Card>
+                <Card.Header>Schneider Electric</Card.Header>
+                <Card.Content>
+                  <h1>Full Stack Developer</h1>
+                  <h3>May 2021 - Present</h3>
+                  <small>4 months Co-op</small>
+                  <h4>React, Dotnet, GraphQL, PostgreSQL, TypeScript, C#</h4>
+                  <p>Worked on a cloud based app</p>
+                </Card.Content>
+                <Card.Footer>
+                  <Badge.TsBadge />
+                  <Badge.React />
+                  <Badge.Dotnet />
+                  <Badge.Nodejs />
+                </Card.Footer>
               </Card>
             </li>
 
             <li>
-              <Card header="OK Help">
-                <h1>Full Stack Developer</h1>
-                <h3>4 months Co-op</h3>
-                <h4>React, Nestjs, GraphQL, PostgreSQL, TypeScript, Node.js</h4>
-                <p>
-                  Worked on a really cool emergency response project for a
-                  startup
-                </p>
+              <Card>
+                <Card.Header>OK Help</Card.Header>
+                <Card.Content>
+                  <h1>Full Stack Developer</h1>
+                  <h3>4 months Co-op</h3>
+                  <h4>
+                    React, Nestjs, GraphQL, PostgreSQL, TypeScript, Node.js
+                  </h4>
+                  <p>
+                    Worked on a really cool emergency response project for a
+                    startup
+                  </p>
+                </Card.Content>
               </Card>
             </li>
 
             <li>
-              <Card header="Quester Tangent">
-                <h1>Software Developer</h1>
-                <h3>8 months Co-op</h3>
-                <h4>Qt, Node.js, C++, JavaScript, HTML, QML</h4>
-                <p>
-                  Development of a specialized device (a train operator's
-                  control panel)
-                </p>
+              <Card>
+                <Card.Header>Quester Tangent</Card.Header>
+                <Card.Content>
+                  <h1>Software Developer</h1>
+                  <h3>8 months Co-op</h3>
+                  <h4>Qt, Node.js, C++, JavaScript, HTML, QML</h4>
+                  <p>
+                    Development of a specialized device (a train operator's
+                    control panel)
+                  </p>
+                </Card.Content>
               </Card>
             </li>
           </ul>
@@ -56,7 +67,9 @@ export function App() {
         <Section header="Projects" class="bg-green-400 dark:bg-indigo-400">
           <ul>
             <li>
-              <Card header="Watch" />
+              <Card>
+                <Card.Content>Watch</Card.Content>
+              </Card>
             </li>
           </ul>
         </Section>

@@ -7,7 +7,7 @@ interface ISectionProps {
 
 export const Section = (props: PropsWithChildren<ISectionProps>) => {
   return (
-    <section class={`bg-slate-400 first:mt-4 dark:bg-slate-800 ${props.class}`}>
+    <section class={`first:mt-4 ${props.class}`}>
       <header class="container mx-auto px-4 pt-4 text-xl font-semibold">
         {props.header}
       </header>
