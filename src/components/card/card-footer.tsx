@@ -5,7 +5,7 @@ export interface ICardFooterProps {
 export const CardFooter: React.FC<ICardFooterProps> = (props) => {
   return (
     <footer
-      class={`rounded-b-2xl bg-slate-400 p-4 text-lg font-semibold ${props.class}`}
+      class={`rounded-b-xl p-4 last:pt-2 ${props.class}`}
     >
       {props.children}
     </footer>

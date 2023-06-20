@@ -5,7 +5,7 @@ export interface ICardHeaderProps {
 export const CardHeader: React.FC<ICardHeaderProps> = (props) => {
   return (
     <header
-      class={`rounded-t-2xl bg-pink-900 p-4 text-lg font-semibold ${props.class}`}
+      class={`rounded-t-xl p-4 first:pb-2 text-lg font-semibold ${props.class}`}
     >
       {props.children}
     </header>

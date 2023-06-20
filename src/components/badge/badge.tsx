@@ -6,7 +6,7 @@ interface IBadgeProps {
 export const Badge = (props: IBadgeProps) => {
   return (
     <span
-      class={`rounded-xl px-2 py-0.5 text-xs font-medium shadow ${props.class}`}
+      class={`m-1 rounded-xl px-2 py-0.5 text-xs font-medium shadow ${props.class}`}
     >
       {props.value}
     </span>
