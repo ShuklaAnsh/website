@@ -11,7 +11,7 @@ export function App() {
         <aside>Hello, I need coffee.</aside>
       </article>
       <main class="mb-auto">
-        <Section header="Skills">
+        <Section header="Skills" class="bg-green-600 dark:bg-indigo-500">
           <ul>
             <li>TypeScript</li>
             <li>React</li>
@@ -19,7 +19,7 @@ export function App() {
             <li>Node.js</li>
           </ul>
         </Section>
-        <Section header="Experience">
+        <Section header="Experience" class="bg-green-300 dark:bg-indigo-900">
           <ul class="space-y-5">
             <li>
               <h1>Full Stack Developer</h1>
@@ -52,7 +52,11 @@ export function App() {
             </li>
           </ul>
         </Section>
-        <Section header="Projects">{Math.round(Math.random() * 100)}</Section>
+        <Section header="Projects" class="bg-green-400 dark:bg-indigo-400">
+          <ul>
+            <li>Watch</li>
+          </ul>
+        </Section>
       </main>
       <footer class="bg-slate-400 dark:bg-slate-800">
         <div class="container mx-auto p-4">Footer</div>
