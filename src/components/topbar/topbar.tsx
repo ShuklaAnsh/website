@@ -3,14 +3,16 @@ import { useWindowScroll } from "../../hooks";
 export const Topbar = () => {
   const scrollTop = useWindowScroll();
 
-  let bgClass = "sticky top-0 transition-colors transition-shadow";
-  let textClass = "container mx-auto p-4 text-3xl font-bold transition-colors";
+  let bgClass =
+    "sticky top-0 transition-colors ease-in-out duration-300 transition-shadow  ease-in-out duration-300";
+  let textClass =
+    "container text-center mx-auto p-2 md:p-4 text-3xl font-bold transition-colors ease-in-out duration-300";
   if (scrollTop <= 15) {
     bgClass += " bg-transparent";
-    textClass += "text-green-800 dark:text-green-500";
+    textClass += "text-pink-500 dark:text-pink:500";
   } else {
-    bgClass += " bg-slate-400 dark:bg-slate-800 shadow-md";
-    textClass += " text-pink-800 dark:text-pink-500";
+    bgClass += " bg-zinc-200 dark:bg-slate-800 shadow-md";
+    textClass += " text-stone-600 dark:text-teal-600";
   }
 
   return (
