@@ -1,6 +1,5 @@
-import { Section } from "./components";
+import { Card, Section, Topbar } from "./components";
 import profilePic from "./assets/profile.jpg";
-import { Topbar } from "./components/topbar";
 
 export function App() {
   return (
@@ -20,41 +19,47 @@ export function App() {
           </ul>
         </Section>
         <Section header="Experience" class="bg-green-300 dark:bg-indigo-900">
-          <ul class="space-y-5">
+          <ul class="space-y-4">
             <li>
-              <h1>Full Stack Developer</h1>
-              <h2>Schneider Electric</h2>
-              <h3>May 2021 - Present</h3>
-              <small>4 months Co-op</small>
-              <h4>React, Dotnet, GraphQL, PostgreSQL, TypeScript, C#</h4>
-              <p>Worked on a cloud based app</p>
+              <Card header="Schneider Electric">
+                <h1>Full Stack Developer</h1>
+                <h3>May 2021 - Present</h3>
+                <small>4 months Co-op</small>
+                <h4>React, Dotnet, GraphQL, PostgreSQL, TypeScript, C#</h4>
+                <p>Worked on a cloud based app</p>
+              </Card>
             </li>
 
             <li>
-              <h1>Full Stack Developer</h1>
-              <h2>OK Help</h2>
-              <h3>4 months Co-op</h3>
-              <h4>React, Nestjs, GraphQL, PostgreSQL, TypeScript, Node.js</h4>
-              <p>
-                Worked on a really cool emergency response project for a startup
-              </p>
+              <Card header="OK Help">
+                <h1>Full Stack Developer</h1>
+                <h3>4 months Co-op</h3>
+                <h4>React, Nestjs, GraphQL, PostgreSQL, TypeScript, Node.js</h4>
+                <p>
+                  Worked on a really cool emergency response project for a
+                  startup
+                </p>
+              </Card>
             </li>
 
             <li>
-              <h1>Software Developer</h1>
-              <h2>Quester Tangent</h2>
-              <h3>8 months Co-op</h3>
-              <h4>Qt, Node.js, C++, JavaScript, HTML, QML</h4>
-              <p>
-                Development of a specialized device (a train operator's control
-                panel)
-              </p>
+              <Card header="Quester Tangent">
+                <h1>Software Developer</h1>
+                <h3>8 months Co-op</h3>
+                <h4>Qt, Node.js, C++, JavaScript, HTML, QML</h4>
+                <p>
+                  Development of a specialized device (a train operator's
+                  control panel)
+                </p>
+              </Card>
             </li>
           </ul>
         </Section>
         <Section header="Projects" class="bg-green-400 dark:bg-indigo-400">
           <ul>
-            <li>Watch</li>
+            <li>
+              <Card header="Watch" />
+            </li>
           </ul>
         </Section>
       </main>
