@@ -75,7 +75,23 @@ export function App() {
         </Section>
       </main>
       <footer class="bg-slate-400 dark:bg-slate-800">
-        <div class="container mx-auto p-4">Footer</div>
+        <div class="container mx-auto p-4">
+          <address class="flex flex-col">
+            <span>
+              GitHub:{" "}
+              <a href="https://www.github.com/ShuklaAnsh">
+                github.com/shuklaansh
+              </a>
+            </span>
+            <span>
+              Email:{" "}
+              <a href="mailto:contact@anshshukla.dev">contact@anshshukla.dev</a>
+            </span>
+            <span>
+              Phone: <a href="tel:+12508576459">+1 (250) 857-6459</a>
+            </span>
+          </address>
+        </div>
       </footer>
     </div>
   );
