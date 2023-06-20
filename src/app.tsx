@@ -1,4 +1,4 @@
-import { Card, Section, Topbar } from "./components";
+import { Badge, Card, Section, Topbar } from "./components";
 import profilePic from "./assets/profile.jpg";
 
 export function App() {
@@ -11,12 +11,10 @@ export function App() {
       </article>
       <main class="mb-auto">
         <Section header="Skills" class="bg-green-600 dark:bg-indigo-500">
-          <ul>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Dotnet</li>
-            <li>Node.js</li>
-          </ul>
+          <Badge.TsBadge />
+          <Badge.React />
+          <Badge.Dotnet />
+          <Badge.Nodejs />
         </Section>
         <Section header="Experience" class="bg-green-300 dark:bg-indigo-900">
           <ul class="space-y-4">
