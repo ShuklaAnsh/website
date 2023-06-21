@@ -1,4 +1,4 @@
-import { useCallback, useState } from "preact/hooks";
+import { useCallback, useState } from "react";
 import { useWindowEvent } from "./use-window-event";
 
 interface WindowScrollOptions {

@@ -15,8 +15,8 @@ export const Topbar = () => {
   }
 
   return (
-    <header class={bgClass}>
-      <nav class={textClass}>Ansh Shukla</nav>
+    <header className={bgClass}>
+      <nav className={textClass}>Ansh Shukla</nav>
     </header>
   );
 };

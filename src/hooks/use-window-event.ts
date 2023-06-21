@@ -1,4 +1,4 @@
-import { useEffect } from "preact/hooks";
+import { useEffect } from "react";
 
 export const useWindowEvent = <EventType extends keyof WindowEventMap>(
   eventType: EventType,

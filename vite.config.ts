@@ -9,11 +9,11 @@ export default defineConfig({
     port: 3000,
   },
   resolve: {
-    alias: {
-      react: "preact/compat",
-      "react-dom/test-utils": "preact/test-utils",
-      "react-dom": "preact/compat",
-      "react/jsx-runtime": "preact/jsx-runtime",
-    },
+    alias: [
+      { find: "react", replacement: "preact/compat" },
+      { find: "react-dom/test-utils", replacement: "preact/test-utils" },
+      { find: "react-dom", replacement: "preact/compat" },
+      { find: "react/jsx-runtime", replacement: "preact/jsx-runtime" },
+    ],
   },
 });

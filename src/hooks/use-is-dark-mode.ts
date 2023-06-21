@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useState } from "preact/hooks";
+import { useEffect, useCallback, useState } from "react";
 
 export const useIsDarkMode = () => {
   const checkIsDarkMode = useCallback(
