@@ -1,5 +1,5 @@
 import { Blurb } from "../blurb";
-import profilePicUri from "../../assets/profile.jpg";
+import profilePicUri from "../../assets/profile.webp";
 
 export const Intro = () => {
   return (

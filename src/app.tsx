@@ -1,4 +1,4 @@
-import { Badge, Card, Intro, Link, Section, Topbar } from "./components";
+import { Badge, Card, Icon, Intro, Link, Section, Topbar } from "./components";
 
 export function App() {
   return (
@@ -118,7 +118,7 @@ export function App() {
           <ul className="space-y-4">
             <li>
               <Card>
-                <Card.Content>Watch Face</Card.Content>
+                <Card.Header>Watch Face</Card.Header>
                 <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge value="Android" />
                   <Badge value="WearOS" />
@@ -130,8 +130,15 @@ export function App() {
 
             <li>
               <Card>
-                <Card.Content>Splitty</Card.Content>
+                <Card.Header>Splitty</Card.Header>
+                <Card.Content>
+                  Adults need play time too! This app was created, not exactly
+                  to solve a problem, but to play and learn mobile development.
+                  It was inspired by the popular Splitwise app that allows easy
+                  management of I.O.U.s with your friends, family, etc.
+                </Card.Content>
                 <Card.Footer className="flex flex-wrap justify-end space-x-2">
+                  <Badge value="Mobile" />
                   <Badge value="Android" />
                   <Badge value="Kotlin" />
                 </Card.Footer>
@@ -140,8 +147,23 @@ export function App() {
 
             <li>
               <Card>
-                <Card.Content>Oblex</Card.Content>
+                <Card.Header>Oblex</Card.Header>
+                <Card.Content>
+                  The idea for this Android app occurred when I was at the hobby
+                  store buying more colours for painting my D&D minatures. I
+                  found this wicked cool post on Instagram of a Frost Giant that
+                  I wanted to try and recreate. So there I was at the store,
+                  trying to colour match by comparing the bottle to the picture
+                  on my phone, and I thought to myself, wouldn't it be nice if I
+                  could just sample a spot on my picture and it finds the
+                  closest paint match? Presenting, Oblex! Named after the D&D
+                  monster that can create replica's of its victims. The app,
+                  written in Kotlin for native Android, utilises Material 3
+                  design standards and Jetpack Compose to solve this exact
+                  problem with pleasant UX.
+                </Card.Content>
                 <Card.Footer className="flex flex-wrap justify-end space-x-2">
+                  <Badge value="Mobile" />
                   <Badge value="Android" />
                   <Badge value="Kotlin" />
                   <Badge value="Jetpack Compose" />
@@ -151,8 +173,9 @@ export function App() {
 
             <li>
               <Card>
-                <Card.Content>Creatures and Caves</Card.Content>
+                <Card.Header>Creatures and Caves</Card.Header>
                 <Card.Footer className="flex flex-wrap justify-end space-x-2">
+                  <Badge value="Web" />
                   <Badge.React />
                   <Badge.TsBadge />
                   <Badge.Dotnet />
@@ -167,28 +190,42 @@ export function App() {
       </main>
       <footer className="bg-zinc-200 dark:bg-slate-800">
         <div className="container mx-auto p-4">
-          <address className="flex flex-col">
-            <span>
-              GitHub:{" "}
-              <Link href="https://www.github.com/ShuklaAnsh">
-                github.com/shuklaansh
-              </Link>
-            </span>
-            <span>
-              LinkedIn:{" "}
-              <Link href="https://www.linkedin.com/in/ansh-shukla/">
-                linkedin.com/in/ansh-shukla
-              </Link>
-            </span>
-            <span>
-              Email:{" "}
-              <Link href="mailto:contact@anshshukla.dev">
-                contact@anshshukla.dev
-              </Link>
-            </span>
-            <span>
-              Phone: <Link href="tel:+12508576459">+1 (250) 857-6459</Link>
-            </span>
+          <address className="flex flex-col space-y-2">
+            <Link
+              title="GitHub"
+              href="https://www.github.com/ShuklaAnsh"
+              className="space-x-2"
+            >
+              <Icon name="github" />
+              <span>github.com/shuklaansh</span>
+            </Link>
+
+            <Link
+              title="LinkedIn"
+              href="https://www.linkedin.com/in/ansh-shukla/"
+              className="space-x-2"
+            >
+              <Icon name="linkedin" />
+              <span>linkedin.com/in/ansh-shukla</span>
+            </Link>
+
+            <Link
+              title="email"
+              href="mailto:contact@anshshukla.dev"
+              className="space-x-2"
+            >
+              <Icon name="envelope" />
+              <span>contact@anshshukla.dev</span>
+            </Link>
+
+            <Link
+              title="Phone Number"
+              href="tel:+12508576459"
+              className="space-x-2"
+            >
+              <Icon name="phone" />
+              <span>+1 (250) 857-6459</span>
+            </Link>
           </address>
         </div>
       </footer>

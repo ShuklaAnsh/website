@@ -5,3 +5,4 @@ export * from "./intro";
 export * from "./link";
 export * from "./section";
 export * from "./topbar";
+export * from "./icon";
