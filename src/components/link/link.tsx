@@ -10,7 +10,7 @@ export const Link: React.FC<ILinkProps> = (props) => {
       target="_blank"
       href={props.href}
       title={props.title}
-      className={`underline-offset-4 transition-colors hover:underline hover:brightness-200 ${props.className}`}
+      className={`w-fit underline-offset-4 transition-colors hover:underline hover:brightness-200 ${props.className}`}
     >
       {props.children}
     </a>

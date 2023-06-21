@@ -189,8 +189,8 @@ export function App() {
         </Section>
       </main>
       <footer className="bg-zinc-200 dark:bg-slate-800">
-        <div className="container mx-auto p-4">
-          <address className="flex flex-col space-y-2">
+        <div className="container mx-auto flex p-4">
+          <address className="flex w-fit flex-col space-y-2">
             <Link
               title="GitHub"
               href="https://www.github.com/ShuklaAnsh"
