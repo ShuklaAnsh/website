@@ -1,4 +1,4 @@
-import { Badge, Card, Section, Topbar } from "./components";
+import { Badge, Card, Link, Section, Topbar } from "./components";
 import profilePic from "./assets/profile.jpg";
 
 export function App() {
@@ -6,7 +6,11 @@ export function App() {
     <div class="flex min-h-screen flex-col scroll-smooth bg-zinc-200 text-zinc-800 hover:scroll-auto dark:bg-slate-900 dark:text-zinc-200">
       <Topbar />
       <article class="container mx-auto flex items-center space-x-4 px-4 pt-4">
-        <img class="w-32 rounded-full md:w-64" src={profilePic} />
+        <img
+          class="w-32 rounded-full md:w-64"
+          src={profilePic}
+          alt="Ansh Shukla Profile Picture"
+        />
         <aside>Hello, I need coffee.</aside>
       </article>
       <main class="mb-auto">
@@ -15,7 +19,12 @@ export function App() {
             <li>
               <Card>
                 <Card.Header>
-                  Schneider Electric{" "}
+                  <Link
+                    href="https://www.se.com/us/en/product-range/88215214-ecostruxure-energy-hub/#overview"
+                    title="Page describing the project that my team and I worked on"
+                  >
+                    Schneider Electric
+                  </Link>
                   <Badge
                     class="float-right bg-green-200 text-black"
                     value="Full time"
@@ -38,6 +47,8 @@ export function App() {
                   <Badge.Nodejs />
                   <Badge value="PostgreSQL" />
                   <Badge value="GraphQL" />
+                  <Badge value="Kafka" />
+                  <Badge value="Redux" />
                 </Card.Footer>
               </Card>
             </li>
@@ -45,7 +56,12 @@ export function App() {
             <li>
               <Card>
                 <Card.Header>
-                  OK Help{" "}
+                  <Link
+                    href="https://www.okhelp.org/"
+                    title="Landing page for OK Help"
+                  >
+                    OK Help
+                  </Link>
                   <Badge
                     class="float-right bg-blue-200 text-black"
                     value="4-month co-op"
@@ -73,7 +89,12 @@ export function App() {
             <li>
               <Card>
                 <Card.Header>
-                  Quester Tangent{" "}
+                  <Link
+                    href="https://www.questertangent.com/"
+                    title="Landing page for Quester Tangent"
+                  >
+                    Quester Tangent
+                  </Link>
                   <Badge
                     class="float-right bg-blue-200 text-black"
                     value="2 x 4-month co-op"
@@ -89,8 +110,7 @@ export function App() {
                 <Card.Footer class="flex flex-wrap justify-end space-x-2">
                   <Badge.Nodejs />
                   <Badge value="C++" />
-                  <Badge value="Qt" />
-                  <Badge value="QML" />
+                  <Badge value="Qt QML" />
                   <Badge value="HTML" />
                   <Badge value="JavaScript" />
                 </Card.Footer>
