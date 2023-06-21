@@ -22,5 +22,3 @@ export const Blurb = () => {
     </pre>
   );
 };
-
-export default Blurb;

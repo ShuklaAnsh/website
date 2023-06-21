@@ -1,18 +1,10 @@
-import { Badge, Blurb, Card, Link, Section, Topbar } from "./components";
-import profilePic from "./assets/profile.jpg";
+import { Badge, Card, Intro, Link, Section, Topbar } from "./components";
 
 export function App() {
   return (
     <div className="flex min-h-screen flex-col scroll-smooth bg-zinc-200 text-zinc-800 hover:scroll-auto dark:bg-slate-900 dark:text-zinc-200">
       <Topbar />
-      <article className="container mx-auto flex flex-col items-center justify-center px-4 pt-4 md:flex-row">
-        <img
-          className="mx-4 mb-4 h-32 w-32 rounded-full md:h-48 md:w-48"
-          src={profilePic}
-          alt="Ansh Shukla Profile Picture"
-        />
-        <Blurb />
-      </article>
+      <Intro />
       <main className="mb-auto">
         <Section header="Experience" className="bg-yellow-200 dark:bg-teal-700">
           <ul className="space-y-4">
@@ -178,16 +170,18 @@ export function App() {
           <address className="flex flex-col">
             <span>
               GitHub:{" "}
-              <a href="https://www.github.com/ShuklaAnsh">
+              <Link href="https://www.github.com/ShuklaAnsh">
                 github.com/shuklaansh
-              </a>
+              </Link>
             </span>
             <span>
               Email:{" "}
-              <a href="mailto:contact@anshshukla.dev">contact@anshshukla.dev</a>
+              <Link href="mailto:contact@anshshukla.dev">
+                contact@anshshukla.dev
+              </Link>
             </span>
             <span>
-              Phone: <a href="tel:+12508576459">+1 (250) 857-6459</a>
+              Phone: <Link href="tel:+12508576459">+1 (250) 857-6459</Link>
             </span>
           </address>
         </div>
