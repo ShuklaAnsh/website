@@ -175,6 +175,12 @@ export function App() {
               </Link>
             </span>
             <span>
+              LinkedIn:{" "}
+              <Link href="https://www.linkedin.com/in/ansh-shukla/">
+                linkedin.com/in/ansh-shukla
+              </Link>
+            </span>
+            <span>
               Email:{" "}
               <Link href="mailto:contact@anshshukla.dev">
                 contact@anshshukla.dev
