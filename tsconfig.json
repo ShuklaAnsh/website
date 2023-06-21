@@ -13,7 +13,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
+    // "jsxImportSource": "preact",
+    // "jsx": "preserve",
+    // "jsxFactory": "h",
+    // "jsxFragmentFactory": "Fragment",
 
     /* Linting */
     "strict": true,
@@ -22,5 +25,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
+
   "references": [{ "path": "./tsconfig.node.json" }]
 }

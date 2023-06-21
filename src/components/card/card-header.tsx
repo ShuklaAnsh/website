@@ -1,11 +1,11 @@
-export interface ICardHeaderProps {
-  class?: string;
+export interface ICardHeaderProps extends React.PropsWithChildren {
+  className?: string;
 }
 
 export const CardHeader: React.FC<ICardHeaderProps> = (props) => {
   return (
     <header
-      class={`rounded-t-xl p-4 first:pb-2 text-lg font-semibold ${props.class}`}
+      className={`rounded-t-xl p-4 text-lg font-semibold first:pb-2 ${props.className}`}
     >
       {props.children}
     </header>

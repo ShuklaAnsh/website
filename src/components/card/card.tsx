@@ -1,10 +1,9 @@
-import React from "preact/compat";
 import { CardFooter, ICardFooterProps } from "./card-footer";
 import { CardHeader, ICardHeaderProps } from "./card-header";
 import { CardContent, ICardContentProps } from "./card-content";
 
-interface ICardProps {
-  class?: string;
+interface ICardProps extends React.PropsWithChildren {
+  className?: string;
 }
 
 interface CardSubComponents {
@@ -16,7 +15,7 @@ interface CardSubComponents {
 export const Card: React.FC<ICardProps> & CardSubComponents = (props) => {
   return (
     <article
-      class={`rounded-xl bg-zinc-200 shadow dark:bg-slate-800 ${props.class}`}
+      className={`rounded-xl bg-zinc-200 shadow dark:bg-slate-800 ${props.className}`}
     >
       {props.children}
     </article>

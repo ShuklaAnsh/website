@@ -1,12 +1,12 @@
 interface IBadgeProps {
   value: string;
-  class?: string;
+  className?: string;
 }
 
 export const Badge = (props: IBadgeProps) => {
   return (
     <span
-      class={`m-1 rounded-xl px-2 py-0.5 text-xs font-medium shadow ${props.class}`}
+      className={`m-1 rounded-xl px-2 py-0.5 text-xs font-medium shadow ${props.className}`}
     >
       {props.value}
     </span>
@@ -16,27 +16,27 @@ export const Badge = (props: IBadgeProps) => {
 Badge.TsBadge = () => (
   <Badge
     value="TypeScript"
-    class="bg-[#007ACC] text-white dark:bg-[#007ACC] dark:text-white"
+    className="bg-[#007ACC] text-white dark:bg-[#007ACC] dark:text-white"
   />
 );
 
 Badge.React = () => (
   <Badge
     value="React"
-    class="bg-[#61DBFB] text-slate-800 dark:bg-[#61DBFB] dark:text-slate-800"
+    className="bg-[#61DBFB] text-slate-800 dark:bg-[#61DBFB] dark:text-slate-800"
   />
 );
 
 Badge.Dotnet = () => (
   <Badge
     value="Dotnet"
-    class="bg-[#512BD4] text-white dark:bg-[#512BD4] dark:text-white"
+    className="bg-[#512BD4] text-white dark:bg-[#512BD4] dark:text-white"
   />
 );
 
 Badge.Nodejs = () => (
   <Badge
     value="Node.js"
-    class="bg-[#333333] text-[#339933] dark:bg-[#333333] dark:text-[#339933]"
+    className="bg-[#333333] text-[#339933] dark:bg-[#333333] dark:text-[#339933]"
   />
 );

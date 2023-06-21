@@ -3,19 +3,19 @@ import profilePic from "./assets/profile.jpg";
 
 export function App() {
   return (
-    <div class="flex min-h-screen flex-col scroll-smooth bg-zinc-200 text-zinc-800 hover:scroll-auto dark:bg-slate-900 dark:text-zinc-200">
+    <div className="flex min-h-screen flex-col scroll-smooth bg-zinc-200 text-zinc-800 hover:scroll-auto dark:bg-slate-900 dark:text-zinc-200">
       <Topbar />
-      <article class="container mx-auto flex items-center space-x-4 px-4 pt-4">
+      <article className="container mx-auto flex items-center space-x-4 px-4 pt-4">
         <img
-          class="w-32 rounded-full md:w-64"
+          className="w-32 rounded-full md:w-64"
           src={profilePic}
           alt="Ansh Shukla Profile Picture"
         />
         <aside>Hello, I need coffee.</aside>
       </article>
-      <main class="mb-auto">
-        <Section header="Experience" class="bg-yellow-200 dark:bg-teal-700">
-          <ul class="space-y-4">
+      <main className="mb-auto">
+        <Section header="Experience" className="bg-yellow-200 dark:bg-teal-700">
+          <ul className="space-y-4">
             <li>
               <Card>
                 <Card.Header>
@@ -26,21 +26,23 @@ export function App() {
                     Schneider Electric
                   </Link>
                   <Badge
-                    class="float-right bg-green-200 text-black"
+                    className="float-right bg-green-200 text-black"
                     value="Full time"
                   />
                   <Badge
-                    class="float-right bg-blue-200 text-black"
+                    className="float-right bg-blue-200 text-black"
                     value="4-month co-op"
                   />
                 </Card.Header>
                 <Card.Content>
-                  <h1 class="text-md font-semibold">Full Stack Developer</h1>
+                  <h1 className="text-md font-semibold">
+                    Full Stack Developer
+                  </h1>
                   <h3>Full time since May 2021 - Present</h3>
                   <small>4 months Co-op</small>
                   <p>Worked on a cloud based app</p>
                 </Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge.React />
                   <Badge.TsBadge />
                   <Badge.Dotnet />
@@ -63,18 +65,20 @@ export function App() {
                     OK Help
                   </Link>
                   <Badge
-                    class="float-right bg-blue-200 text-black"
+                    className="float-right bg-blue-200 text-black"
                     value="4-month co-op"
                   />
                 </Card.Header>
                 <Card.Content>
-                  <h1 class="text-md font-semibold">Full Stack Developer</h1>
+                  <h1 className="text-md font-semibold">
+                    Full Stack Developer
+                  </h1>
                   <p>
                     Worked on a really cool emergency response project for a
                     startup
                   </p>
                 </Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge.React />
                   <Badge.TsBadge />
                   <Badge.Dotnet />
@@ -96,18 +100,18 @@ export function App() {
                     Quester Tangent
                   </Link>
                   <Badge
-                    class="float-right bg-blue-200 text-black"
+                    className="float-right bg-blue-200 text-black"
                     value="2 x 4-month co-op"
                   />
                 </Card.Header>
                 <Card.Content>
-                  <h1 class="text-md font-semibold">Software Developer</h1>
+                  <h1 className="text-md font-semibold">Software Developer</h1>
                   <p>
                     Development of a specialized device (a train operator's
                     control panel)
                   </p>
                 </Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge.Nodejs />
                   <Badge value="C++" />
                   <Badge value="Qt QML" />
@@ -118,12 +122,12 @@ export function App() {
             </li>
           </ul>
         </Section>
-        <Section header="Projects" class="bg-indigo-200 dark:bg-cyan-900">
-          <ul class="space-y-4">
+        <Section header="Projects" className="bg-indigo-200 dark:bg-cyan-900">
+          <ul className="space-y-4">
             <li>
               <Card>
                 <Card.Content>Watch Face</Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge value="Android" />
                   <Badge value="WearOS" />
                   <Badge value="Kotlin" />
@@ -135,7 +139,7 @@ export function App() {
             <li>
               <Card>
                 <Card.Content>Splitty</Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge value="Android" />
                   <Badge value="Kotlin" />
                 </Card.Footer>
@@ -145,7 +149,7 @@ export function App() {
             <li>
               <Card>
                 <Card.Content>Oblex</Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge value="Android" />
                   <Badge value="Kotlin" />
                   <Badge value="Jetpack Compose" />
@@ -156,7 +160,7 @@ export function App() {
             <li>
               <Card>
                 <Card.Content>Creatures and Caves</Card.Content>
-                <Card.Footer class="flex flex-wrap justify-end space-x-2">
+                <Card.Footer className="flex flex-wrap justify-end space-x-2">
                   <Badge.React />
                   <Badge.TsBadge />
                   <Badge.Dotnet />
@@ -169,9 +173,9 @@ export function App() {
           </ul>
         </Section>
       </main>
-      <footer class="bg-zinc-200 dark:bg-slate-800">
-        <div class="container mx-auto p-4">
-          <address class="flex flex-col">
+      <footer className="bg-zinc-200 dark:bg-slate-800">
+        <div className="container mx-auto p-4">
+          <address className="flex flex-col">
             <span>
               GitHub:{" "}
               <a href="https://www.github.com/ShuklaAnsh">
