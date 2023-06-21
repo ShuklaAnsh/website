@@ -1,17 +1,17 @@
-import { Badge, Card, Link, Section, Topbar } from "./components";
+import { Badge, Blurb, Card, Link, Section, Topbar } from "./components";
 import profilePic from "./assets/profile.jpg";
 
 export function App() {
   return (
     <div className="flex min-h-screen flex-col scroll-smooth bg-zinc-200 text-zinc-800 hover:scroll-auto dark:bg-slate-900 dark:text-zinc-200">
       <Topbar />
-      <article className="container mx-auto flex items-center space-x-4 px-4 pt-4">
+      <article className="container mx-auto flex flex-col items-center justify-center px-4 pt-4 md:flex-row">
         <img
-          className="w-32 rounded-full md:w-64"
+          className="mr-4 w-32 rounded-full md:w-64"
           src={profilePic}
           alt="Ansh Shukla Profile Picture"
         />
-        <aside>Hello, I need coffee.</aside>
+        <Blurb />
       </article>
       <main className="mb-auto">
         <Section header="Experience" className="bg-yellow-200 dark:bg-teal-700">
