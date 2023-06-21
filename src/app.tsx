@@ -7,7 +7,7 @@ export function App() {
       <Topbar />
       <article className="container mx-auto flex flex-col items-center justify-center px-4 pt-4 md:flex-row">
         <img
-          className="mx-4 mb-4 w-32 rounded-full md:w-48"
+          className="mx-4 mb-4 h-32 w-32 rounded-full md:h-48 md:w-48"
           src={profilePic}
           alt="Ansh Shukla Profile Picture"
         />

@@ -13,11 +13,13 @@ export const useWindowScroll = (
 
   const handleScroll = useCallback(() => {
     const currScroll = Math.round(window.scrollY);
-    if (currScroll > options.threshold) return;
+    if (currScroll !== scrollState) {
+      if (scrollState !== 0 && currScroll > options.threshold) return;
 
-    const dy = Math.abs(currScroll - scrollState);
-    if (scrollState === 0 || dy > options.steps) {
-      setScrollState(currScroll);
+      const dy = Math.abs(currScroll - scrollState);
+      if (scrollState === 0 || dy > options.steps) {
+        setScrollState(currScroll);
+      }
     }
   }, [scrollState]);
 

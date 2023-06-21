@@ -1,7 +1,7 @@
 export const Blurb = () => {
   return (
     <pre className="not-prose flex flex-col rounded-md bg-zinc-100 p-4 text-slate-800 dark:bg-zinc-800 dark:text-slate-200">
-      <code className="italic text-fuchsia-300 opacity-75">
+      <code className="italic text-fuchsia-300">
         {`<!-- `}
         <span className="text-fuchsia-400">TODO:</span>
         {` More meaningful blurb -->`}
