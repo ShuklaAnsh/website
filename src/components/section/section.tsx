@@ -1,6 +1,8 @@
+import { JSX } from "preact/jsx-runtime";
+
 interface ISectionProps extends React.PropsWithChildren {
   className?: string;
-  header?: React.FC | string;
+  header?: JSX.Element | string;
 }
 
 export const Section: React.FC<ISectionProps> = (props) => {
