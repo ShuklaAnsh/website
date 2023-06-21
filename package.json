@@ -9,12 +9,11 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
-    "preact": "^10.13.2",
-    "react-syntax-highlighter": "^15.5.0"
+    "preact": "^10.13.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
-    "@types/react-syntax-highlighter": "^15.5.7",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "prettier": "2.8.8",

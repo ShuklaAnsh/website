@@ -1,6 +1,6 @@
 interface ISectionProps extends React.PropsWithChildren {
   className?: string;
-  header?: JSX.Element | JSX.Element[] | string;
+  header?: React.FC | string;
 }
 
 export const Section: React.FC<ISectionProps> = (props) => {
