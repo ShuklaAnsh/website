@@ -5,9 +5,9 @@ export const ExperienceSection = () => (
   <Section header="Experience">
     <Card>
       <Card.Header>
-        <span className="md:float-right">
+        <span className="space-x-2 md:float-right">
           <SquareBadge
-            className="ml-0 bg-emerald-400 text-black"
+            className="bg-emerald-400 text-black"
             value="Full time"
           />
           <SquareBadge
@@ -41,10 +41,12 @@ export const ExperienceSection = () => (
 
     <Card>
       <Card.Header>
-        <SquareBadge
-          className="ml-0 bg-blue-200 text-black md:float-right"
-          value="4-month co-op"
-        />
+        <span className="md:float-right">
+          <SquareBadge
+            className="bg-blue-200 text-black"
+            value="4-month co-op"
+          />
+        </span>
         <br className="md:hidden" />
         <ExperienceTitle
           href="https://www.okhelp.org/"
@@ -69,10 +71,13 @@ export const ExperienceSection = () => (
 
     <Card>
       <Card.Header>
-        <SquareBadge
-          className="ml-0 bg-blue-200 text-black md:float-right"
-          value="2 x 4-month co-op"
-        />
+        <span className="md:float-right">
+          <SquareBadge
+            className="bg-blue-200 text-black"
+            value="2 x 4-month co-op"
+          />
+        </span>
+
         <br className="md:hidden" />
         <ExperienceTitle
           href="https://www.questertangent.com/"
