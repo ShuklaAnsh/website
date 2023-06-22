@@ -1,15 +1,11 @@
-interface IBadgeProps {
+export interface IBadgeProps {
   value: string;
   className?: string;
 }
 
 export const Badge = (props: IBadgeProps) => {
   return (
-    <span
-      className={`m-1 rounded-xl px-2 py-0.5 text-xs font-medium shadow ${props.className}`}
-    >
-      {props.value}
-    </span>
+    <small className={`badge no-prose ${props.className}`}>{props.value}</small>
   );
 };
 

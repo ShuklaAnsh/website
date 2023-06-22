@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'verdant-green': '#12674A'
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

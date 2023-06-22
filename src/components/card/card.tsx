@@ -15,7 +15,7 @@ interface CardSubComponents {
 export const Card: React.FC<ICardProps> & CardSubComponents = (props) => {
   return (
     <article
-      className={`rounded-xl bg-zinc-200 shadow dark:bg-slate-800 ${props.className}`}
+      className={`prose prose-zinc mx-auto w-full rounded-xl bg-zinc-200 shadow dark:prose-invert dark:bg-zinc-800 ${props.className}`}
     >
       {props.children}
     </article>

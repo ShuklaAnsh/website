@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: var(--bg);
-  /* background-color: theme(colors.transparent); */
+@layer base {
+  :root {
+    --color-primary: ;
+    background-color: theme("colors.verdant-green");
+  }
+}
+
+@layer components {
+  .badge {
+    @apply bg-slate-300 text-slate-700 dark:bg-slate-700 dark:text-slate-300;
+    margin: theme("margin.1");
+    align-self: center;
+    font-size: theme("fontSize[xs]");
+    font-weight: theme("fontWeight[medium]");
+    padding: theme("padding[0.5]") theme("padding[2]");
+    border-radius: theme("borderRadius.xl");
+    box-shadow: theme("boxShadow[DEFAULT]");
+  }
 }

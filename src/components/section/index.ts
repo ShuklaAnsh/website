@@ -1,3 +1,3 @@
 export * from "./section";
-export * from "./experience-section";
+export * from "./experience";
 export * from "./projects-section";
