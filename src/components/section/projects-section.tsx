@@ -1,4 +1,4 @@
-import { Card, Badge, Section } from "..";
+import { Card, Badge, Section, CommonBadges } from "..";
 
 export const ProjectsSection = () => (
   <Section header="Projects">
@@ -18,10 +18,10 @@ export const ProjectsSection = () => (
         </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge value="Android" />
-        <Badge value="WearOS" />
-        <Badge value="Kotlin" />
+        {CommonBadges.Android}
+        {CommonBadges.Kotlin}
         <Badge value="Jetpack Compose" />
+        <Badge value="WearOS" />
       </Card.Footer>
     </Card>
 
@@ -47,10 +47,10 @@ export const ProjectsSection = () => (
         </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge value="Mobile" />
-        <Badge value="Android" />
-        <Badge value="Kotlin" />
+        {CommonBadges.Android}
+        {CommonBadges.Kotlin}
         <Badge value="Jetpack Compose" />
+        <Badge value="Mobile" />
       </Card.Footer>
     </Card>
 
@@ -67,13 +67,13 @@ export const ProjectsSection = () => (
         </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge value="Web" />
-        <Badge.React />
-        <Badge.TsBadge />
-        <Badge.Dotnet />
-        <Badge.Nodejs />
-        <Badge value="PostgreSQL" />
-        <Badge value="GraphQL" />
+        {CommonBadges.React}
+        {CommonBadges.TypeScript}
+        {CommonBadges.Nodejs}
+        {CommonBadges.Dotnet}
+        {CommonBadges.Docker}
+        {CommonBadges.GraphQL}
+        {CommonBadges.Postgres}
       </Card.Footer>
     </Card>
 
@@ -93,11 +93,11 @@ export const ProjectsSection = () => (
         </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge value="Mobile" />
-        <Badge value="Firebase" />
-        <Badge value="Android" />
-        <Badge value="Kotlin" />
+        {CommonBadges.Android}
+        {CommonBadges.Kotlin}
+        {CommonBadges.Firebase}
         <Badge value="XML UI" />
+        <Badge value="Mobile" />
       </Card.Footer>
     </Card>
   </Section>

@@ -1,4 +1,4 @@
-import { Card, Badge, Section, SquareBadge } from "../..";
+import { Card, Badge, Section, SquareBadge, CommonBadges } from "../..";
 import { ExperienceTitle } from "./experience-title";
 
 export const ExperienceSection = () => (
@@ -28,14 +28,15 @@ export const ExperienceSection = () => (
         <p>Worked on a cloud based app</p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge.React />
-        <Badge.TsBadge />
-        <Badge.Dotnet />
-        <Badge.Nodejs />
-        <Badge value="PostgreSQL" />
-        <Badge value="GraphQL" />
-        <Badge value="Kafka" />
-        <Badge value="Redux" />
+        {CommonBadges.React}
+        {CommonBadges.TypeScript}
+        <Badge value="Redux" className="bg-[#764ABC] text-white" />
+        {CommonBadges.Nodejs}
+        {CommonBadges.Dotnet}
+        <Badge value="Kafka" className="bg-zinc-900 text-white" />
+        {CommonBadges.GraphQL}
+        {CommonBadges.Postgres}
+        {CommonBadges.Docker}
       </Card.Footer>
     </Card>
 
@@ -59,13 +60,16 @@ export const ExperienceSection = () => (
         <p>Worked on a really cool emergency response project for a startup</p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge.React />
-        <Badge.TsBadge />
-        <Badge.Dotnet />
-        <Badge.Nodejs />
-        <Badge value="PostgreSQL" />
-        <Badge value="GraphQL" />
-        <Badge value="Nestjs" />
+        {CommonBadges.React}
+        {CommonBadges.TypeScript}
+        <Badge
+          value="Nestjs"
+          className="bg-[#ED1543] text-white dark:bg-white dark:text-[#ED1543]"
+        />
+        {CommonBadges.Nodejs}
+        {CommonBadges.Dotnet}
+        {CommonBadges.GraphQL}
+        {CommonBadges.Postgres}
       </Card.Footer>
     </Card>
 
@@ -92,11 +96,11 @@ export const ExperienceSection = () => (
         </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
-        <Badge.Nodejs />
-        <Badge value="C++" />
-        <Badge value="Qt QML" />
-        <Badge value="HTML" />
-        <Badge value="JavaScript" />
+        <Badge value="JavaScript" className="bg-[#FCDC00] text-zinc-800" />
+        <Badge value="HTML" className="bg-[#E54B20] text-white" />
+        {CommonBadges.Nodejs}
+        <Badge value="C++" className="bg-[#004487] text-white" />
+        <Badge value="Qt QML" className="bg-[#3EBA4C] text-white" />
       </Card.Footer>
     </Card>
   </Section>
