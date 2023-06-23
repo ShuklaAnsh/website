@@ -1,21 +1,10 @@
-import { Card, Badge, Section, SquareBadge, CommonBadges } from "../..";
+import { CommonBadges, Badge, Card, Section } from "../..";
 import { ExperienceTitle } from "./experience-title";
 
 export const ExperienceSection = () => (
   <Section header="Experience">
     <Card>
       <Card.Header>
-        <span className="space-x-2 md:float-right">
-          <SquareBadge
-            className="bg-emerald-400 text-black"
-            value="Full time"
-          />
-          <SquareBadge
-            className="bg-blue-200 text-black"
-            value="4-month co-op"
-          />
-        </span>
-        <br className="md:hidden" />
         <ExperienceTitle
           href="https://www.se.com/us/en/product-range/88215214-ecostruxure-energy-hub/#overview"
           description="Page describing the project that my team and I worked on"
@@ -24,8 +13,27 @@ export const ExperienceSection = () => (
         />
       </Card.Header>
       <Card.Content>
-        <small>Full time since May 2021 - Present</small>
-        <p>Worked on a cloud based app</p>
+        <p>
+          I've been working with Schneider Electric as a{" "}
+          <b>Full Stack Software Developer</b> since I graduated at the end of
+          April 2021. I had also worked at Schneider as a co-op on a 4-month
+          work term from Jan-April 2020. My team and I have been developing{" "}
+          <b>micro-frontends</b>, written in <b>React TypeScript</b>, and
+          backend <b>micro-services</b>, written in <b>Dotnet C#</b>, for an
+          energy management <b>Cloud-based SaaS</b> product. Everything was
+          containerized using <b>Docker</b> and hosted on <b>Microsoft Azure</b>
+          .
+        </p>
+        <p>
+          After graduating, I didn't even second guess applying to work at
+          Schneider. My time as a co-op there was one of the best work terms I
+          had since the team truely treated me as a part of the team and threw
+          me straight into the deep end and have guided me into the developer I
+          am today.
+        </p>
+        <p>
+          My responsibilities: - FE, BE, Shared Libs, loc, teaching, mentoring
+        </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
         {CommonBadges.React}
@@ -42,13 +50,6 @@ export const ExperienceSection = () => (
 
     <Card>
       <Card.Header>
-        <span className="md:float-right">
-          <SquareBadge
-            className="bg-blue-200 text-black"
-            value="4-month co-op"
-          />
-        </span>
-        <br className="md:hidden" />
         <ExperienceTitle
           href="https://www.okhelp.org/"
           description="Landing page for OK Help"
@@ -57,7 +58,12 @@ export const ExperienceSection = () => (
         />
       </Card.Header>
       <Card.Content>
-        <p>Worked on a really cool emergency response project for a startup</p>
+        <p>
+          "OK Help" was a project at a small startup, based in Victoria, BC,
+          that I had the pleasure to work on as part of a 4 month co-op work
+          term. The goal of "OK Help" is to aid their clients in being prepared
+          for emergency situations.
+        </p>
       </Card.Content>
       <Card.Footer className="flex flex-wrap justify-end space-x-2">
         {CommonBadges.React}
@@ -75,14 +81,6 @@ export const ExperienceSection = () => (
 
     <Card>
       <Card.Header>
-        <span className="md:float-right">
-          <SquareBadge
-            className="bg-blue-200 text-black"
-            value="2 x 4-month co-op"
-          />
-        </span>
-
-        <br className="md:hidden" />
         <ExperienceTitle
           href="https://www.questertangent.com/"
           description="Landing page for Quester Tangent"
