@@ -2,22 +2,31 @@ import { useCallback, useState } from "react";
 import { useWindowEvent } from "./use-window-event";
 
 interface WindowScrollOptions {
-  threshold: number;
-  steps: number;
+  /** Defaults to -1 */
+  updateLimit?: number;
+  /** Defaults to 5 */
+  steps?: number;
 }
 
-export const useWindowScroll = (
-  options: WindowScrollOptions = { threshold: 200, steps: 5 }
-) => {
+const defaultOpts: Required<WindowScrollOptions> = {
+  steps: 5,
+  updateLimit: -1,
+};
+
+export const useWindowScroll = (options?: WindowScrollOptions) => {
   const [scrollState, setScrollState] = useState(0);
+
+  const steps = options?.steps ?? defaultOpts.steps;
+  const updateLimit = options?.updateLimit ?? defaultOpts.updateLimit;
 
   const handleScroll = useCallback(() => {
     const currScroll = Math.round(window.scrollY);
     if (currScroll !== scrollState) {
-      if (scrollState !== 0 && currScroll > options.threshold) return;
-
+      if (scrollState !== 0 && updateLimit !== -1 && currScroll > updateLimit) {
+        return;
+      }
       const dy = Math.abs(currScroll - scrollState);
-      if (scrollState === 0 || dy > options.steps) {
+      if (scrollState === 0 || dy > steps) {
         setScrollState(currScroll);
       }
     }

@@ -1,7 +1,7 @@
 import { useWindowScroll } from "../../hooks";
 
 export const Topbar = () => {
-  const scrollTop = useWindowScroll();
+  const scrollTop = useWindowScroll({ updateLimit: 200, steps: 5 });
 
   let bgClass = "sticky top-0 transition-all duration-200";
   let textClass =
