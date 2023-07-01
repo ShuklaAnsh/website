@@ -1,5 +1,6 @@
 import {
   Intro,
+  AboutMeSection,
   ProjectsSection,
   Topbar,
   ExperienceSection,
@@ -12,6 +13,7 @@ export function App() {
       <Topbar />
       <Intro />
       <main className="mb-auto mt-4 bg-zinc-300 dark:bg-zinc-900">
+        <AboutMeSection />
         <ExperienceSection />
         <ProjectsSection />
       </main>

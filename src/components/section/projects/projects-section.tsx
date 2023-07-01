@@ -1,4 +1,4 @@
-import { Card, Badge, Section, CommonBadges } from "..";
+import { Card, Badge, Section, CommonBadges } from "../..";
 
 export const ProjectsSection = () => (
   <Section header="Projects">
