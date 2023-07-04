@@ -1,7 +1,7 @@
 import { Card, Badge, Section, CommonBadges } from "../..";
 
 export const ProjectsSection = () => (
-  <Section header="Projects">
+  <Section id="projects" header="Projects">
     <Card>
       <Card.Header>
         <h4>Watch Face</h4>
