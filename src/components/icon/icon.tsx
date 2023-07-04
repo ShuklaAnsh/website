@@ -9,7 +9,7 @@ interface IIconProps {
 
 export const Icon = (props: IIconProps) => {
   const isDarkMode = useIsDarkMode();
-  const LazyIcon = lazy(() => import(`../../assets/${props.name}.svg`));
+  const LazyIcon = lazy(() => import(`../../assets/icons/${props.name}.svg`));
 
   const fill = props.fill ?? (isDarkMode ? "white" : "#333333");
   return (
