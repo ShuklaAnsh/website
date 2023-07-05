@@ -1,1 +1,2 @@
-export * from "./gallery";
+export * from "./art-gallery";
+export * from "./photography-gallery";

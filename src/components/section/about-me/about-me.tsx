@@ -1,11 +1,10 @@
-import { Gallery } from "../../../components/gallery";
-import { Card, Section } from "../..";
+import { Card, Section, ArtGallery, PhotographyGallery } from "../..";
 
 export const AboutMeSection = () => (
   <Section id="about-me" header="About Me">
     <Card>
       <Card.Header></Card.Header>
-      <Card.Content>
+      <Card.Content className="space-y-4">
         <p>
           Graduated with Bachelors of Software Engineering in 2021
           <br />
@@ -24,7 +23,8 @@ export const AboutMeSection = () => (
           <br />
           Art
         </p>
-        <Gallery />
+        <ArtGallery />
+        <PhotographyGallery />
         <p>Values: Sustainability</p>
       </Card.Content>
     </Card>
