@@ -2,6 +2,7 @@ export * from "./badge";
 export * from "./blurb";
 export * from "./card";
 export * from "./footer";
+export * from "./gallery";
 export * from "./icon";
 export * from "./intro";
 export * from "./link";

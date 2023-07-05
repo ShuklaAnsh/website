@@ -1,11 +1,13 @@
-interface IGalleryItemProps {
+import { GalleryItemPlaceholder } from "./gallery-item-placeholder";
+
+export interface IGalleryItemProps {
   src: string;
   caption?: string;
   alt?: string;
 }
 
 export const GalleryItem = (props: IGalleryItemProps) => (
-  <div>
+  <figure>
     {props.caption && <caption>{props.caption}</caption>}
     <img
       loading="lazy"
@@ -15,5 +17,7 @@ export const GalleryItem = (props: IGalleryItemProps) => (
       src={props.src}
       alt={props.alt}
     />
-  </div>
+  </figure>
 );
+
+GalleryItem.Placeholder = GalleryItemPlaceholder;
