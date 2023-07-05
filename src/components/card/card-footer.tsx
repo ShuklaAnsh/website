@@ -1,4 +1,4 @@
-export interface ICardFooterProps extends React.PropsWithChildren {
+export interface ICardFooterProps {
   className?: string;
 }
 

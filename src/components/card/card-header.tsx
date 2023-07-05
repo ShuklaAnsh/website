@@ -1,4 +1,4 @@
-export interface ICardHeaderProps extends React.PropsWithChildren {
+export interface ICardHeaderProps {
   className?: string;
 }
 

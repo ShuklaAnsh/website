@@ -1,4 +1,4 @@
-export interface ICardContentProps extends React.PropsWithChildren {
+export interface ICardContentProps {
   className?: string;
 }
 
