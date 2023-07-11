@@ -3,7 +3,7 @@ import { Link, Icon } from "..";
 export const Footer = () => (
   <footer>
     <div className="container mx-auto flex p-4 text-[whitesmoke]">
-      <address className="flex w-fit flex-col space-y-2">
+      <address id="contact-info" className="flex w-fit flex-col space-y-2">
         <Link
           title="GitHub"
           href="https://www.github.com/ShuklaAnsh"
